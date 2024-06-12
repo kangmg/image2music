@@ -74,6 +74,26 @@ AVAILABLE_MOOD_TAGS_KOR = list(MOOD_TAGS_CONVERSION.keys())
 AVAILABLE_MOOD_TAGS_EN  = list(MOOD_TAGS_CONVERSION.values())
 
 
+# 13가지 무드 정보
+A_cluster = {"MOOD" : ["Amusing"]}
+B_cluster = {"MOOD" : ["Annoying"]}
+C_cluster = {"MOOD" : ["Anxious","Tense"]}
+D_cluster = {"MOOD" : ["Beautiful"]}
+E_cluster = {"MOOD" : ["Calm","Relaxing"]}
+F_cluster = {"MOOD" : ["Dreamy"]}
+G_cluster = {"MOOD" : ["Energizing","Pump-up"]}
+H_cluster = {"MOOD" : ["Erotic"]}
+I_cluster = {"MOOD" : ["Defiant"]}
+J_cluster = {"MOOD" : ["Joyful","Cheerful"]}
+K_cluster = {"MOOD" : ["Sad","Depressing"]}
+L_cluster = {"MOOD" : ["Scary"]}
+M_cluster = {"MOOD" : ["Triumphant","Heroic"]}
+
+clusters = [A_cluster, B_cluster, C_cluster, D_cluster, E_cluster, F_cluster, G_cluster, H_cluster, I_cluster, J_cluster, K_cluster, L_cluster, M_cluster]
+clusters_name = ["A_cluster", "B_cluster", "C_cluster", "D_cluster", "E_cluster", "F_cluster", "G_cluster", "H_cluster", "I_cluster", "J_cluster", "K_cluster", "L_cluster", "M_cluster"]
+
+
+
 def get_API_result(moodTag:str, API_KEY, result_max=222)->dict:
   """
   Last.FM API를 이용한 mood tag 기반 음악 검색 API 함수
@@ -115,7 +135,7 @@ def data_formatter(API_result:dict, moodTag:str, save_csv=False)->pd.DataFrame:
     artist = single_music["artist"]["name"]
     lastfm_url = single_music["url"]
     return {"artist":artist, "music_name":music_name, "duration":duration, "lastfm_url":lastfm_url, 
-            "youtube_url": None, "mood_EN":moodTag, "mood_KOR":MOOD_TAGS_CONVERSION_REVERSE[moodTag]}
+            "youtube_url": None, "mood_EN":moodTag, "mood_KOR": MOOD_TAGS_CONVERSION_REVERSE[moodTag] if moodTag in AVAILABLE_MOOD_TAGS_KOR else None}
 
   music_list = API_result["tracks"]["track"]
   parsed_music_list = list(parser(music, moodTag) for music in music_list)
