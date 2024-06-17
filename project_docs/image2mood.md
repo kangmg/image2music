@@ -10,8 +10,7 @@ Vision Transformer와 Text Transformer간의 상호작용이 핵심인 모델
 ------------------------------------------------------------------------------------------  
 ### 데이터  
 
-[데이터 원본](https://huggingface.co/datasets/visheratin/laion-coco-nllb)  
-**(Blip 모델에 이용)**  
+[Blip 모델 이용 데이터 원본](https://huggingface.co/datasets/visheratin/laion-coco-nllb)  
 
 + 전체 데이터 수  
 89만장  
@@ -19,7 +18,7 @@ Vision Transformer와 Text Transformer간의 상호작용이 핵심인 모델
 + 이용방식  
 이미지 링크에서 이미지를 가져와 이미지 caption과 함께 이용 및 학습  
 
--> **train, valid = 8 : 2 비율**    
+-> **train, valid = 8 : 2 비율**로 학습  
 
 ------------------------------------------------------------------------------------------  
 ### 과정  
