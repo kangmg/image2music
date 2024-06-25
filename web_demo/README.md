@@ -15,5 +15,5 @@
 
 | Colab NoteBook | Web Service |
 |:-:|:-:|
-|  | localtunnel |
-|  | ngrok | 
+| <a target="_blank" href="https://colab.research.google.com/github/kangmg/image2music/blob/main/web_demo/MOODSic_localtunnel.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | localtunnel |
+| <a target="_blank" href="https://colab.research.google.com/github/kangmg/image2music/blob/main/web_demo/MOODSic_ngrok.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | ngrok | 
