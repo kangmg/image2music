@@ -5,6 +5,8 @@ image2music Service
 
 `2024 LikeLion Data Analysis School`, `DATATON`, `Team MISO`
 
+프로젝트 기간 (25일) : `24.06.03` ~ `24.06.27`
+
 ---
 
 ## 🎶 서비스 소개
