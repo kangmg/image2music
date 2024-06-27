@@ -9,26 +9,37 @@ image2music Service
 
 ## 🎶 서비스 소개
 
+`Moodsic`은 사용자의 사진을 분석하여 해당 상황에 맞는 노래를 추천해주는 서비스입니다. 사진으로 부터 상황을 읽고 상황에서 감정을 추출하는 방식으로 서비스가 작동합니다. 아래 사진을 보면 데이터가 어떻게 변환되고 서비스가 작동가는지 쉽게 이해할 수 있을 거예요.
+
+<img src="https://github.com/kangmg/image2music/assets/59556369/6b5c7b79-b111-48f4-81e3-c6c30b4558d6" alt="서비스 소개" width="500">
+
+<br><br>
+
 ## 🖥️ 서비스 시연 영상
 
   https://github.com/kangmg/image2music/assets/59556369/727d3e74-f512-4da6-808f-e32eae590850
 
 `* 네이버 클로바 더빙 이용`
 
-## 사용해보기
+<br>
+
+## 🌐 사용해보기
 
 [데모 노트북](https://github.com/kangmg/image2music/tree/main/web_demo)에서 localtunnel notebook을 실행하면 임시로 호스팅된 데모 페이지에 접속 가능해요. 단 API가 정상적으로 발급되지 않으면 Playground와 LLM에게 추천받기 기능은 사용 불가해요. 
+
+<br>
 
 ## 🛠️ 서비스 동작 방식
 
 <img src="https://github.com/kangmg/image2music/assets/59556369/27493c4d-61b9-4f71-8a93-4ea81ef9fbf0" alt="서비스 동작 방식" width="600">
 
+<br><br>
+
 ## 🗃️ DB 구축
 
 <img src="https://github.com/kangmg/image2music/assets/59556369/25949e7a-12b5-400a-9440-d4e342356d3f" alt="DB 구축 데이터 Pipeline" width="600">
 
-
-<br>
+<br><br>
 
 ## 🙇‍♂️ 팀 소개 
 
@@ -57,5 +68,3 @@ image2music Service
 > ✔ 이번 프로젝트에서 `음악 데이터 수집 및 전처리`, `음악 감정 분류 모델 제작`을 담당했어요
 > - 프로젝트를 진행하면서 음성 데이터를 처음 다뤄보면서 데이터를 설명하는 다양한 방식에 대해서 공부해볼 수 있는 좋은 기회였던것 같습니다. 음성을 수치로 나타내 설명할 수 있다는 점이 흥미로웠고 음악의 느낌마다 그 특성의 차이가 유의미하게 나타나는 점이 재미있었습니다.
 > - 과적합 문제를 해결하지 못해 모델의 성능을 최대한 끌어올리지 못한 부분이 아쉬워요. 모델들의 하이퍼 파라미터 튜닝을 다양하게 하지 못한 것이 아쉬워요 더 좋은 모델 성능을 뽑을 수 있다면 좀 더 좋은 추천 시스템을 만들 수 있지 않을까 라는 생각이 들지만 그래도 유의미한 완성본을 만들어 냈다는 점은 만족스러운 프로젝트였어요.
-
-## LICENSE
